@@ -1,0 +1,50 @@
+#map {
+    height: 1080px;
+  }
+body{
+  margin: 0;
+}
+  
+  #header {
+    display: grid;
+    background-color: rgb(76, 0, 255);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #titre{
+    padding-left: 60px;
+  }
+  
+  #sousheader {
+    grid-column: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: aqua;
+    justify-items: center;
+    align-items: center;
+  }
+  #login{
+    grid-column: 1;
+  }
+  #notif{
+    grid-column: 2;
+  }
+  #img1{
+    width: 30px;
+  }
+  #img2{
+    width: 30px;
+  }
+  .popup {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .popup .popup-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
